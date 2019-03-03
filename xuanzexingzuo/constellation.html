@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览。-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta charset="UTF-8">
+		<!--避免IE使用兼容模式-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!--优先使用 IE 最新版本和 Chrome:-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!--WebApp全屏模式   隐藏地址栏。-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!--禁止百度转码显示。-->
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<!--忽略页面中的数字识别为电话，忽略email识别：-->
+		<meta name="format-detection" content="telphone=no, email=no" />
+		<title>title</title>
+		<link rel="stylesheet" href="reset.css">
+		<!--设置rem-->
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					// orientationchange 事件是在用户水平或者垂直翻转设备（即方向发生变化）时触发的事件。
+					// onresize 事件会在窗口或框架被调整大小时发生。
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						window.clientWidth = docEl.clientWidth;
+						if (!window.clientWidth) return;
+						docEl.style.fontSize = 50 * (window.clientWidth / 375) + 'px';
+						window.base = 50 * (window.clientWidth / 375);
+					};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/constellation.css" />
+	</head>
+	<body>
+		<section>
+			<header class="mui-bar mui-bar-nav">
+				<a href="index.html"><img src="img/图层-5.png"></a>
+				<h1 class="mui-title">星座伴侣</h1>
+			</header>
+			<article class="star">
+				<img src="img/图层-4.png">
+				
+				<p>白羊座Aries</p>
+				<p>(3.21-4.19)</p>
+			</article>
+			<article class="nav">
+				<ul class="day">
+					<li id="col">今日</li>
+					<li>明日</li>
+					<li>本周</li>
+					<li>下周</li>
+					<li>本月</li>
+					<li>本年</li>
+				</ul>
+			</article>
+			<article class="cont">
+				<article class="cont-star ar" id="dis">
+					<ul class="cont-stars">
+					<li>
+						<span>综合指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>健康指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>爱情指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>财运指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>工作指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li><span>速配星座:</span>
+					<b>处女座</b></li>
+					<li><span>幸运颜色:</span>
+					<b>古铜色</b>
+					</li>
+					<li><span>幸运数字:</span>
+					<b>9</b>
+					</li>
+				</ul>
+				<i class="cont-stars-line"></i>
+				<ul class="cont-fate">
+					<li>
+						<h1><img src="img/今日运势.png" >
+						<span>今日概述</span></h1>
+						<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+					</li>
+					<li>
+						<h1><img src="img/运势.png" >
+						<span>综合运势</span></h1>
+						<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+					</li>
+					<li>
+						<h1><img src="img/皇冠.png" >
+						<span>每日推荐</span></h1>
+						<p></p>
+					</li>
+					<!-- color="#fcf5fe" -->
+				</ul>	
+				</article>
+				<article class="ar">
+					<ul class="cont-stars2">
+					<li>
+						<span>综合指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>健康指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>爱情指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>财运指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li>
+						<span>工作指数:</span>
+						<img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" ><img src="img/星星-拷贝-2.png" >
+					</li>
+					<li><span>速配星座:</span>
+					<b>处女座</b></li>
+					<li><span>幸运颜色:</span>
+					<b>古铜色</b>
+					</li>
+					<li><span>幸运数字:</span>
+					<b>9</b>
+					</li>
+				</ul>
+				<i class="cont-stars-line2"></i>
+				<ul class="cont-fate2">
+					<li>
+						<h1><img src="img/今日运势.png" >
+						<span>今日概述</span></h1>
+						<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+					</li>
+					<li>
+						<h1><img src="img/运势.png" >
+						<span>综合运势</span></h1>
+						<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+					</li>
+					<li>
+						<h1><img src="img/皇冠.png" >
+						<span>每日推荐</span></h1>
+						<p></p>
+					</li>
+				</ul>	
+				</article>
+				<article class="ar cont-fat">
+					<ul class="cont-fate3">
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>健康</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>求职</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>恋情</span></h1>
+							<p>之前积累的想法和感受，本周选择说出来，沟通机会增多，亦有可能以争吵的方式出现。单身的，在聚会闲谈中可以获得更多缘分。</p>
+						</li>
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>财运</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>工作</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>每日推荐</span></h1>
+							<p></p>
+						</li>
+					</ul>	
+				</article>
+				<article class="ar cont-fat">
+					<ul class="cont-fate4">
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>健康</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>求职</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>恋情</span></h1>
+							<p>之前积累的想法和感受，本周选择说出来，沟通机会增多，亦有可能以争吵的方式出现。单身的，在聚会闲谈中可以获得更多缘分。</p>
+						</li>
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>财运</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>工作</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>每日推荐</span></h1>
+							<p></p>
+						</li>
+					</ul>	
+				</article>
+				<article class="cont-fate5 ar">
+					<div class="cont-fate5_1">
+						<div>
+							<h1><img src="img/今日运势.png" >
+							<span>综合运势</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</div>
+					</div>
+					<ul class="cont-fate5_2">
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>健康运势</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>爱情运势</span></h1>
+							<p>之前积累的想法和感受，本周选择说出来，沟通机会增多，亦有可能以争吵的方式出现。单身的，在聚会闲谈中可以获得更多缘分。</p>
+						</li>
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>财运运势</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>工作运势</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>每日推荐</span></h1>
+							<p></p>
+						</li>
+					</ul>
+				</article>
+				<article class="ar">
+					<ul class="cont-fate6">
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>年度密码</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						 	<h1>
+						 	<span>年度说明</span></h1>
+						 	<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						    
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>事业运</span></h1>
+							<p>之前积累的想法和感受，本周选择说出来，沟通机会增多，亦有可能以争吵的方式出现。单身的，在聚会闲谈中可以获得更多缘分。</p>
+						</li>
+						<li>
+							<h1><img src="img/今日运势.png" >
+							<span>爱情运</span></h1>
+							<p>有些思考的小漩涡，可能让你忽然的放空，生活中许多细节让你感触良多，五位杂陈，常常有时候就慢动作定格，想法在某处冻结停留，陷入一阵自我对话的沉思之中，这个时候你不不喜欢被打扰或询问，也不想让某些曝光，个性变得有些隐晦</p>
+						</li>
+						<li>
+							<h1><img src="img/运势.png" >
+							<span>财运</span></h1>
+							<p>开始新年新的工作，不要继续沉浸在节日的欢乐当中，赶紧回归吧！一天都不算太忙，现在只是工作的准备阶段。爱情是需要争取的，空想而不行动也是徒劳的。有获得赚钱的好机会，若能抓住必有收获。</p>
+						</li>
+						<li>
+							<h1><img src="img/皇冠.png" >
+							<span>每日推荐</span></h1>
+							<p></p>
+						</li>
+					</ul>
+				</article>
+			</article>
+			<article class="foot">
+				<ul class="foot-text">
+					<li id="foot-yuan">
+						<img src="img/首页.png" >
+						<p>首页</p>
+					</li>
+					<li>
+						<img src="img/头条-(2).png" >
+						<p>头条</p>
+					</li>
+				</ul>
+			</article>
+		</section>
+
+
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ajax.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var o = {}
+			var id = location.search.substring(1,)
+			var arr = id.split("&")
+			arr.forEach(function(item) {
+				o[item.split("=")[0]] = item.split("=")[1]
+			})
+			$.ajax({
+				type: 'get',
+				url: 'http://route.showapi.com/872-1',
+				dataType: 'json',
+				data: {
+
+					"showapi_appid": '87945', //这里需要改成自己的appid
+					"showapi_sign": '60edfebd5699404988c6333ec74e281b', //这里需要改成自己的应用的密钥secret
+					"star": o.id,
+					"needTomorrow": "1",
+					"needWeek": "1",
+					"needMonth": "1",
+					"needYear": "1"
+
+				},
+				
+				error: function(XmlHttpRequest, textStatus, errorThrown) {
+					alert("操作失败!");
+				},
+				success: function(result) {
+					console.log(result) //console变量在ie低版本下不能用
+					// alert(result.showapi_res_code)
+				}
+			});
+			
+			var oCont=document.getElementsByClassName('cont')[0]
+			var oConts=oCont.getElementsByClassName('ar')
+			var oLi = document.getElementsByClassName('day')[0].getElementsByTagName('li');
+
+			for (var i = 0; i < oLi.length; i++) {
+				oLi[i].index=i;
+				oLi[i].onclick = function() {
+					for (var j = 0; j < oConts.length; j++) {
+						oLi[j].id = "";
+						oConts[j].id='';
+					}
+					this.id = "col";
+					oConts[this.index].id='dis';
+				}
+			}
+			$.ajax({
+   type: "GET",
+   url: "star.json",
+   data: "",
+   success: function(msg){
+      ;
+	 for(var i=0;i<msg.length;i++){
+		
+		 if(msg[i].id==o.id){
+	$(".star").html(`
+	<img src="${msg[i].img}">
+	<p>${msg[i].name}</p>
+	<p>${msg[i].month}</p>
+	`) 
+	 }	
+}
+   }
+   
+}
+
+
+);
+			
+			
+			
+		</script>
+	</body>
+</html>
